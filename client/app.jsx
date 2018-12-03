@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import StatusTable from './statusTable.jsx';
+import StatusTable from './statusTable';
 
 
 ReactDOM.render(

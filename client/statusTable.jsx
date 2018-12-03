@@ -1,9 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-class Welcome extends React.Component {
+class StatusTable extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      quote: 'the man must ache'
+    };
+  }
+
   render () {
-    return <h1>the man must ache></h1>
+    return (
+      <h1>{this.state.quote}</h1>
+    );
   }
 }
 
