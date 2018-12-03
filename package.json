@@ -3,14 +3,26 @@
   "version": "1.0.0",
   "description": "a web-based exercise tracker",
   "main": "app.jsx",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./server/server.js",
+    "webpack": "webpack --watch"
+  },
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "node": "^11.2.0",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
   },
   "devDependencies": {
-    "nodemon": "^1.18.7"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "nodemon": "^1.18.7",
+    "webpack": "^4.26.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
   },
   "repository": {
     "type": "git",
@@ -18,6 +30,12 @@
   },
   "author": "henrytheyang",
   "license": "ISC",
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
+  },
   "bugs": {
     "url": "https://github.com/henrytheyang/themanmustache/issues"
   },
