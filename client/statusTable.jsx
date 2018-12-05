@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import logo from '../public/kizenLogo.png';
+// need to install image loader
 
 class StatusTable extends React.Component {
   constructor(props) {
@@ -11,7 +13,10 @@ class StatusTable extends React.Component {
 
   render () {
     return (
-      <h1>{this.state.quote}</h1>
+      <div>
+        <img src={logo} alt="Logo"></img>
+        <h1>{this.state.quote}</h1>
+      </div>
     );
   }
 }
